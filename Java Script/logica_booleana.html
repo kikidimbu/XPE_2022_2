@@ -1,0 +1,35 @@
+<html>
+    <script>
+        //programa para calcular IMC
+        //CLASSIFICAÇÃO     IMC
+        //Abaixo do peso    18,5
+        //Peso normal       18,5 a 24,9
+        //Sobrepeso         25 a 29,9
+        //Obesidade I       30 a 34,9
+        //Obesidade II      35 a 39,9
+        //Obesidade III     Maior ou igual a 40
+
+        //IMC = peso / altura * altura (altura ao quadrado)
+
+        function imc(peso, altura) {
+
+            var imc = peso / (altura * altura);
+
+            if (imc < 18.5) {
+                console.log("Abaixo do peso");
+            } else if (imc >= 18.5 && imc < 25){
+                console.log('Peso normal');
+            } else if (imc>= 25 && imc < 30){
+                console.log('Sobrepeso');
+            } else if (imc>= 30 && imc < 35){
+                console.log('Obesidade I');
+            } else if (imc>= 35 && imc < 40){
+                console.log('Obesidade II');
+            } else {
+                console.log('Obesidade III ou Mórbida');
+            }
+            return imc;
+        }
+            
+    </script>
+</html>

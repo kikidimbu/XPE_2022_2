@@ -1,0 +1,35 @@
+<html>
+    <script>
+        // 1 - Receber o número como parâmetro
+        // 2 - Executar um loop na lista e verificar se é igual ao número buscado
+        // 3 - Quando encontrar, interromper a execução e retornar true
+        // 4 - Se chegar até o fim sem encontrar, retornar false
+        
+        var lista = [19, 54, 18, 11, 47, 98, 36, 44, 87];
+        
+        //padrão 1 - tradicional com a variável existe
+        function verificaNumero(numero){
+            var existe = false;
+            for (var i = 0; i < lista.length; i++){
+                if (lista[i] === numero) {
+                    existe = true;
+                }
+                console.log(i) //se o numero buscado é o primeiro da lista, ele contiará buscando até o fim da lista
+            }
+            return existe;
+        }
+
+        //padrão 2 - utilizando o brek paramos a busca depois de encontrar a primeira vez
+        function verificaNumero2(numero){
+            var existe = false;
+            for (var i = 0; i < lista.length; i++) {
+                console.log(i)
+                if (lista[i] === numero) {
+                    existe = true;
+                    break; // funciona tanto para FOR quanto para WHILE
+                }
+            }
+            return existe;
+        }
+    </script>
+</html>

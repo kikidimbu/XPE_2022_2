@@ -1,0 +1,57 @@
+<html>
+    <script>
+        var carros = ['Gol', 'Palio', 'Uno'];
+        console.log(carros);
+        
+        var primeiroCarro = carros[0]
+        var segundoCarro = carros[1]
+        var terceiroCarro = carros[2]
+        
+        console.log('a primeira posição é: ' + primeiroCarro);
+        console.log('a segunda posição é: ' + segundoCarro);
+        console.log('a tereira posição é: ' + terceiroCarro);
+
+        carros[2] = 'Argo';
+        console.log(carros[2]);
+
+        console.log('tamanho do array: ' + carros.length -1);
+        
+        console.log('o ultimo elemento do array é: ' + carros[carros.lenght -1]);
+        console.log('REMOVENDO O ULTIMO ITEN');
+        console.log(carros.pop());
+
+        //Inserindo itens na lista
+        console.log('A D I C I O N A N D O   I T E N S   À   L I S T A');
+        carros[3] = 'Sandero';
+        console.log(carros);
+        carros[4] = 'Prisma';
+        console.log(carros);
+        carros[carros.lenght] = 'Civic';
+        console.log(carros);
+        carros[2] = 'Fusca';
+        console.log(carros);
+        carros[5] = 'Maveric'
+        console.log(carros);
+
+        //adiciona itens ao final da lista
+        carros.push('Polo')
+        console.log(carros);
+
+        //remover indices do final da lista
+        console.log('R E M O V E N D O   I T E N S   D A   L I S T A');
+        console.log(carros.pop());
+        console.log(carros);
+        
+        //adiciona itens ao inicio da lista:
+        console.log('A D I C I O N A N D O   A O   I N I C I O   D A   L I S T A');
+        carros.unshift('Jetta')
+        console.log(carros);
+        //removendo com indice
+        //console.log(carros.pop(carros[2]));
+        //console.log(carros.pop(carros[5]));
+        console.log('R E M O V E R   O   P R I M E I R O   E L E M E N T O');
+        console.log(carros.shift());
+        //reimpressão depois da alteração
+        console.log(carros);
+    </script>
+</html>

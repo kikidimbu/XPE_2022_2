@@ -1,0 +1,40 @@
+<html>
+    <script>
+        var a = 40;
+        var b = 40;
+        if (a > b){
+            console.log('a maior do que b');
+        } else if (a < b) {
+            console.log('a é menor do que b');
+        } else {
+            console.log('a é igual a b');
+        }
+        
+        console.log('Sempre executar');
+
+        var c = 40;
+        var d = 50;
+        if (c <= d) {
+            console.log('c é maior que d');
+        }
+
+        // == não compara o tipo de valor além de comparar o valor
+        var f = 10;
+        var g = '10';
+        if (f == g ){
+            console.log('onde g é uma str e f é number, f == g')
+        }
+        if (f !== g){
+            console.log('f é !== de g')
+        }
+
+        // compara o tipo de valor além de comparar o valor
+        var h = 10;
+        var i = '10';
+        if (h === i ){
+            console.log('onde i é uma str e h é number, h === i')
+        } else {
+            console.log('onde i é uma str e h é number, h não é === i')
+        }
+    </script>
+</html>
